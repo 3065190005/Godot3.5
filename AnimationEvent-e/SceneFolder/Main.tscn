@@ -1,0 +1,108 @@
+[gd_scene load_steps=15 format=2]
+
+[ext_resource path="res://SceneFolder/Hero.tscn" type="PackedScene" id=1]
+[ext_resource path="res://SceneFolder/Enemy.tscn" type="PackedScene" id=2]
+[ext_resource path="res://ScriptFolder/Main.gd" type="Script" id=3]
+[ext_resource path="res://SceneFolder/ScreenShake.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Resources/bgm.mp3" type="AudioStream" id=5]
+[ext_resource path="res://Resources/bg.png" type="Texture" id=6]
+[ext_resource path="res://SceneFolder/Camera2D.gd" type="Script" id=7]
+
+[sub_resource type="CanvasItemMaterial" id=5]
+
+[sub_resource type="Gradient" id=6]
+colors = PoolColorArray( 0.298039, 0.298039, 0.298039, 1, 0.298039, 0.298039, 0.298039, 1 )
+
+[sub_resource type="GradientTexture" id=7]
+gradient = SubResource( 6 )
+
+[sub_resource type="Gradient" id=2]
+interpolation_mode = 2
+offsets = PoolRealArray( 0, 0.444444, 0.605556, 1 )
+colors = PoolColorArray( 0.266667, 0.266667, 0.266667, 1, 0.0784314, 0.0784314, 0.0784314, 1, 0.0784314, 0.0784314, 0.0784314, 1, 0.282353, 0.278431, 0.278431, 1 )
+
+[sub_resource type="GradientTexture" id=3]
+gradient = SubResource( 2 )
+width = 1024
+
+[sub_resource type="RectangleShape2D" id=1]
+extents = Vector2( 1500, 16.5 )
+
+[sub_resource type="RectangleShape2D" id=4]
+extents = Vector2( 11, 100 )
+
+[node name="Main" type="Node2D"]
+script = ExtResource( 3 )
+bgm_disabled = true
+
+[node name="BgSprite" type="Sprite" parent="."]
+self_modulate = Color( 0.247059, 0.247059, 0.247059, 0.188235 )
+material = SubResource( 5 )
+position = Vector2( 512, 186 )
+texture = ExtResource( 6 )
+normal_map = SubResource( 7 )
+
+[node name="Camera2D" type="Camera2D" parent="."]
+pause_mode = 2
+position = Vector2( 512, 300 )
+current = true
+script = ExtResource( 7 )
+
+[node name="ScreenShake" parent="Camera2D" instance=ExtResource( 4 )]
+pause_mode = 2
+
+[node name="WallSprite" type="Sprite" parent="Camera2D"]
+self_modulate = Color( 1, 1, 1, 0.113725 )
+position = Vector2( 0.188167, 482.5 )
+scale = Vector2( 0.999632, 663 )
+z_index = 100
+z_as_relative = false
+texture = SubResource( 3 )
+
+[node name="StaticNode" type="Node2D" parent="."]
+position = Vector2( 0, -2 )
+
+[node name="FloorRigid" type="StaticBody2D" parent="StaticNode"]
+collision_layer = 8
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticNode/FloorRigid"]
+position = Vector2( 510.5, 471.5 )
+shape = SubResource( 1 )
+
+[node name="LeftWallRigid" type="StaticBody2D" parent="StaticNode"]
+position = Vector2( -1008, -34 )
+collision_layer = 8
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticNode/LeftWallRigid"]
+position = Vector2( 13, 384 )
+shape = SubResource( 4 )
+
+[node name="RightWallRigid" type="StaticBody2D" parent="StaticNode"]
+position = Vector2( 1018, -30 )
+collision_layer = 8
+collision_mask = 16
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="StaticNode/RightWallRigid"]
+position = Vector2( 996, 383 )
+shape = SubResource( 4 )
+
+[node name="Hero" parent="." instance=ExtResource( 1 )]
+position = Vector2( 514, 299 )
+scale = Vector2( 2, 2 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Enemy" parent="." instance=ExtResource( 2 )]
+position = Vector2( 173, 350 )
+scale = Vector2( 2.3, 2.3 )
+
+[node name="BGM" type="AudioStreamPlayer" parent="."]
+pause_mode = 2
+stream = ExtResource( 5 )
+volume_db = -10.0
+
+[node name="Tween" type="Tween" parent="."]
+pause_mode = 2
