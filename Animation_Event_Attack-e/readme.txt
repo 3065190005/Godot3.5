@@ -1,0 +1,14 @@
+# godot3.5 2d横版动作 Test
+# 练习内容  
+基于animationPlayer的角色动画
+基于animationEvent的攻击判定  
+基于animationEvent的受击判定  
+基于Timer的脚步声  
+简单实现角色的三连击  
+基于Timer和Pause的全局顿帧  
+2d相机抖动使用 [代码copy]  
+基于animationEvent的攻击和受击音效播放  
+简单的全局bgm [默认关闭]  
+简单的血条实现  
+简单的场景搭建  
+简单的影子实现  
