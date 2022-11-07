@@ -1,0 +1,25 @@
+[gd_scene load_steps=4 format=2]
+
+[ext_resource path="res://Script/Items.gd" type="Script" id=1]
+[ext_resource path="res://Resources/Environmantal/Shadow/self_shander.png" type="Texture" id=2]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 66.1891
+
+[node name="Items" type="Area2D"]
+z_index = 1
+collision_layer = 64
+collision_mask = 16
+script = ExtResource( 1 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="Shadow" type="Sprite" parent="."]
+position = Vector2( 1.90735e-06, 2.86102e-06 )
+scale = Vector2( 1, 2.5 )
+texture = ExtResource( 2 )
+
+[node name="Sprite" type="Sprite" parent="."]
+
+[connection signal="area_entered" from="." to="." method="_on_Items_area_entered"]

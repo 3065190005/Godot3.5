@@ -1,0 +1,61 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Script/Player.gd" type="Script" id=1]
+[ext_resource path="res://Resources/default_player.png" type="Texture" id=2]
+
+[sub_resource type="ParticlesMaterial" id=1]
+emission_shape = 1
+emission_sphere_radius = 3.0
+flag_disable_z = true
+gravity = Vector3( 0, 98, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+radial_accel = 20.0
+radial_accel_random = 0.5
+angle = 220.0
+
+[sub_resource type="ParticlesMaterial" id=2]
+emission_shape = 1
+emission_sphere_radius = 3.0
+flag_disable_z = true
+gravity = Vector3( 0, 98, 0 )
+orbit_velocity = 0.0
+orbit_velocity_random = 0.0
+radial_accel = 20.0
+radial_accel_random = 0.5
+angle = 220.0
+
+[node name="Player" type="KinematicBody2D"]
+script = ExtResource( 1 )
+
+[node name="PLeft" type="Particles2D" parent="."]
+pause_mode = 2
+position = Vector2( -15, 30 )
+amount = 32
+speed_scale = 2.5
+process_material = SubResource( 1 )
+
+[node name="PRight" type="Particles2D" parent="."]
+pause_mode = 2
+position = Vector2( 14, 29 )
+amount = 32
+speed_scale = 2.5
+process_material = SubResource( 2 )
+
+[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
+polygon = PoolVector2Array( -10, -38, 10, -38, 14, -13, 36, 0, 46, -9, 49, -8, 52, -4, 47, 27, 41, 25, 41, 23, 14, 29, 8, 39, -9, 39, -15, 30, -40, 24, -43, 26, -47, 26, -49, 24, -51, -8, -45, -9, -42, -6, -37, -1, -15, -13 )
+
+[node name="Body" type="Sprite" parent="."]
+texture = ExtResource( 2 )
+
+[node name="FirePos" type="Position2D" parent="."]
+position = Vector2( 0, -39 )
+
+[node name="HurtArea" type="Area2D" parent="."]
+
+[node name="HurtCollision" type="CollisionPolygon2D" parent="HurtArea"]
+polygon = PoolVector2Array( -10, -38, 10, -38, 14, -13, 36, 0, 46, -9, 49, -8, 52, -4, 47, 27, 41, 25, 41, 23, 14, 29, 8, 39, -9, 39, -15, 30, -40, 24, -43, 26, -47, 26, -49, 24, -51, -8, -45, -9, -42, -6, -37, -1, -15, -13 )
+
+[node name="AttackCd" type="Timer" parent="."]
+wait_time = 0.2
+one_shot = true

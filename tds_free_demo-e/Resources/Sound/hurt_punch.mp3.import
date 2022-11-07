@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/hurt_punch.mp3-eb552a6626ce1b4ee893c5aa39e5e6b3.mp3str"
+
+[deps]
+
+source_file="res://Resources/Sound/hurt_punch.mp3"
+dest_files=[ "res://.import/hurt_punch.mp3-eb552a6626ce1b4ee893c5aa39e5e6b3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

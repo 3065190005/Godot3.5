@@ -1,0 +1,141 @@
+[gd_scene load_steps=52 format=2]
+
+[ext_resource path="res://Resources/Environmantal/Shadow/self_shander.png" type="Texture" id=1]
+[ext_resource path="res://Resources/ZombieMan/skeleton-idle_0.png" type="Texture" id=2]
+[ext_resource path="res://Script/ZombieMan.gd" type="Script" id=3]
+[ext_resource path="res://Resources/ZombieMan/skeleton-idle_15.png" type="Texture" id=4]
+[ext_resource path="res://Resources/ZombieMan/skeleton-idle_12.png" type="Texture" id=5]
+[ext_resource path="res://Resources/ZombieMan/skeleton-idle_4.png" type="Texture" id=6]
+[ext_resource path="res://Resources/ZombieMan/skeleton-idle_6.png" type="Texture" id=7]
+[ext_resource path="res://Resources/ZombieMan/skeleton-idle_14.png" type="Texture" id=8]
+[ext_resource path="res://Resources/ZombieMan/skeleton-idle_8.png" type="Texture" id=9]
+[ext_resource path="res://Resources/ZombieMan/skeleton-idle_10.png" type="Texture" id=10]
+[ext_resource path="res://Resources/ZombieMan/skeleton-idle_2.png" type="Texture" id=11]
+[ext_resource path="res://Resources/ZombieMan/skeleton-idle_1.png" type="Texture" id=12]
+[ext_resource path="res://Resources/ZombieMan/skeleton-idle_7.png" type="Texture" id=13]
+[ext_resource path="res://Resources/ZombieMan/skeleton-idle_11.png" type="Texture" id=14]
+[ext_resource path="res://Resources/ZombieMan/skeleton-idle_13.png" type="Texture" id=15]
+[ext_resource path="res://Resources/ZombieMan/skeleton-idle_5.png" type="Texture" id=16]
+[ext_resource path="res://Resources/ZombieMan/skeleton-idle_16.png" type="Texture" id=17]
+[ext_resource path="res://Resources/ZombieMan/skeleton-idle_3.png" type="Texture" id=18]
+[ext_resource path="res://Resources/ZombieMan/skeleton-idle_9.png" type="Texture" id=19]
+[ext_resource path="res://Resources/ZombieMan/skeleton-move_1.png" type="Texture" id=20]
+[ext_resource path="res://Resources/ZombieMan/skeleton-move_4.png" type="Texture" id=21]
+[ext_resource path="res://Resources/ZombieMan/skeleton-move_6.png" type="Texture" id=22]
+[ext_resource path="res://Resources/ZombieMan/skeleton-move_7.png" type="Texture" id=23]
+[ext_resource path="res://Resources/ZombieMan/skeleton-move_8.png" type="Texture" id=24]
+[ext_resource path="res://Resources/ZombieMan/skeleton-move_9.png" type="Texture" id=25]
+[ext_resource path="res://Resources/ZombieMan/skeleton-move_10.png" type="Texture" id=26]
+[ext_resource path="res://Resources/ZombieMan/skeleton-move_11.png" type="Texture" id=27]
+[ext_resource path="res://Resources/ZombieMan/skeleton-move_13.png" type="Texture" id=28]
+[ext_resource path="res://Resources/ZombieMan/skeleton-move_12.png" type="Texture" id=29]
+[ext_resource path="res://Resources/ZombieMan/skeleton-move_3.png" type="Texture" id=30]
+[ext_resource path="res://Resources/ZombieMan/skeleton-move_14.png" type="Texture" id=31]
+[ext_resource path="res://Resources/ZombieMan/skeleton-move_16.png" type="Texture" id=32]
+[ext_resource path="res://Resources/ZombieMan/skeleton-move_2.png" type="Texture" id=33]
+[ext_resource path="res://Resources/ZombieMan/skeleton-move_5.png" type="Texture" id=34]
+[ext_resource path="res://Resources/ZombieMan/skeleton-move_15.png" type="Texture" id=35]
+[ext_resource path="res://Resources/ZombieMan/skeleton-move_0.png" type="Texture" id=36]
+[ext_resource path="res://Resources/ZombieMan/skeleton-attack_0.png" type="Texture" id=37]
+[ext_resource path="res://Resources/ZombieMan/skeleton-attack_3.png" type="Texture" id=38]
+[ext_resource path="res://Resources/ZombieMan/skeleton-attack_4.png" type="Texture" id=39]
+[ext_resource path="res://Resources/ZombieMan/skeleton-attack_5.png" type="Texture" id=40]
+[ext_resource path="res://Resources/ZombieMan/skeleton-attack_2.png" type="Texture" id=41]
+[ext_resource path="res://Resources/ZombieMan/skeleton-attack_1.png" type="Texture" id=42]
+[ext_resource path="res://Resources/ZombieMan/skeleton-attack_8.png" type="Texture" id=43]
+[ext_resource path="res://Resources/ZombieMan/skeleton-attack_7.png" type="Texture" id=44]
+[ext_resource path="res://Resources/ZombieMan/skeleton-attack_6.png" type="Texture" id=45]
+[ext_resource path="res://Resources/Sound/bullet_hit_body.ogg" type="AudioStream" id=46]
+[ext_resource path="res://Resources/Sound/hurt_punch.mp3" type="AudioStream" id=47]
+
+[sub_resource type="CircleShape2D" id=1]
+radius = 102.176
+
+[sub_resource type="SpriteFrames" id=4]
+animations = [ {
+"frames": [ ExtResource( 37 ), ExtResource( 42 ), ExtResource( 41 ), ExtResource( 38 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 45 ), ExtResource( 44 ), ExtResource( 43 ) ],
+"loop": false,
+"name": "attack",
+"speed": 45.0
+}, {
+"frames": [  ],
+"loop": true,
+"name": "default",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 2 ), ExtResource( 12 ), ExtResource( 11 ), ExtResource( 18 ), ExtResource( 6 ), ExtResource( 16 ), ExtResource( 7 ), ExtResource( 13 ), ExtResource( 9 ), ExtResource( 19 ), ExtResource( 10 ), ExtResource( 14 ), ExtResource( 5 ), ExtResource( 15 ), ExtResource( 8 ), ExtResource( 4 ), ExtResource( 17 ) ],
+"loop": true,
+"name": "idle",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 36 ), ExtResource( 20 ), ExtResource( 33 ), ExtResource( 30 ), ExtResource( 21 ), ExtResource( 34 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 26 ), ExtResource( 27 ), ExtResource( 29 ), ExtResource( 28 ), ExtResource( 31 ), ExtResource( 35 ), ExtResource( 32 ) ],
+"loop": true,
+"name": "move",
+"speed": 20.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=3]
+extents = Vector2( 65.6335, 100.424 )
+
+[sub_resource type="CircleShape2D" id=2]
+radius = 11.2495
+
+[node name="ZombieMan" type="KinematicBody2D"]
+z_index = 10
+collision_layer = 257
+collision_mask = 258
+script = ExtResource( 3 )
+
+[node name="BodyCollision" type="CollisionShape2D" parent="."]
+shape = SubResource( 1 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+
+[node name="Shadow" type="Sprite" parent="."]
+self_modulate = Color( 1, 1, 1, 0.470588 )
+position = Vector2( -0.500006, -0.499996 )
+scale = Vector2( 1.6383, 3.89062 )
+texture = ExtResource( 1 )
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 4 )
+playing = true
+offset = Vector2( 1.32053, -1.22711 )
+
+[node name="HitArea" type="Area2D" parent="Sprite"]
+position = Vector2( 49.9924, -0.87262 )
+collision_layer = 8
+collision_mask = 16
+
+[node name="HitCollision" type="CollisionShape2D" parent="Sprite/HitArea"]
+position = Vector2( 28.3741, 0 )
+shape = SubResource( 3 )
+
+[node name="HurtArea" type="Area2D" parent="."]
+position = Vector2( -16.9451, 3.29623 )
+collision_layer = 4
+collision_mask = 160
+
+[node name="HurtCollision" type="CollisionShape2D" parent="HurtArea"]
+scale = Vector2( 10.0512, 10.0512 )
+shape = SubResource( 2 )
+
+[node name="ammo_Audio" type="AudioStreamPlayer2D" parent="."]
+pause_mode = 2
+stream = ExtResource( 46 )
+
+[node name="ZombieAudio" type="AudioStreamPlayer2D" parent="."]
+pause_mode = 2
+max_distance = 500.0
+
+[node name="Timer" type="Timer" parent="ZombieAudio"]
+wait_time = 3.0
+one_shot = true
+
+[node name="PunchAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 47 )
+
+[connection signal="animation_finished" from="Sprite" to="." method="_on_Sprite_animation_finished"]
+[connection signal="area_entered" from="Sprite/HitArea" to="." method="_on_HitArea_area_entered"]
+[connection signal="area_exited" from="Sprite/HitArea" to="." method="_on_HitArea_area_exited"]
+[connection signal="finished" from="ZombieAudio" to="." method="_on_ZombieAudio_finished"]

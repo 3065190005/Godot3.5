@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/hit_punch.mp3-3830f90635fd5f8aabd81e6c7d007ff1.mp3str"
+
+[deps]
+
+source_file="res://Resources/Sound/hit_punch.mp3"
+dest_files=[ "res://.import/hit_punch.mp3-3830f90635fd5f8aabd81e6c7d007ff1.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

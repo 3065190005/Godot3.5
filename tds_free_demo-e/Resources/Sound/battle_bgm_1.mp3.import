@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/battle_bgm_1.mp3-6aeaa9a480ccfabe013be3f9bffac8b1.mp3str"
+
+[deps]
+
+source_file="res://Resources/Sound/battle_bgm_1.mp3"
+dest_files=[ "res://.import/battle_bgm_1.mp3-6aeaa9a480ccfabe013be3f9bffac8b1.mp3str" ]
+
+[params]
+
+loop=true
+loop_offset=0

@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zombie_spawn.mp3-55388057b10e59f197128b7cd6b339d2.mp3str"
+
+[deps]
+
+source_file="res://Resources/Sound/zombie_spawn.mp3"
+dest_files=[ "res://.import/zombie_spawn.mp3-55388057b10e59f197128b7cd6b339d2.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

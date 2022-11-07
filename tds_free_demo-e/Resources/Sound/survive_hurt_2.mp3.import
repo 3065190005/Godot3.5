@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/survive_hurt_2.mp3-24def27c5bd3a5a6e2626d9de7d38c1e.mp3str"
+
+[deps]
+
+source_file="res://Resources/Sound/survive_hurt_2.mp3"
+dest_files=[ "res://.import/survive_hurt_2.mp3-24def27c5bd3a5a6e2626d9de7d38c1e.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

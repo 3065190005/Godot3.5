@@ -1,0 +1,502 @@
+[gd_scene load_steps=221 format=2]
+
+[ext_resource path="res://Resources/Survivor/flashlight/idle/survivor-idle_flashlight_0.png" type="Texture" id=1]
+[ext_resource path="res://Script/Survivor.gd" type="Script" id=2]
+[ext_resource path="res://Resources/Environmantal/Shadow/self_shander.png" type="Texture" id=3]
+[ext_resource path="res://Resources/Environmantal/CinemaLight/light2.png" type="Texture" id=4]
+[ext_resource path="res://Resources/Environmantal/CinemaLight/lightAround.png" type="Texture" id=5]
+[ext_resource path="res://Scene/Weapon.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Resources/Survivor/flashlight/idle/survivor-idle_flashlight_12.png" type="Texture" id=7]
+[ext_resource path="res://Resources/Survivor/flashlight/idle/survivor-idle_flashlight_18.png" type="Texture" id=8]
+[ext_resource path="res://Resources/Survivor/flashlight/idle/survivor-idle_flashlight_6.png" type="Texture" id=9]
+[ext_resource path="res://Resources/Survivor/flashlight/idle/survivor-idle_flashlight_8.png" type="Texture" id=10]
+[ext_resource path="res://Resources/Survivor/flashlight/idle/survivor-idle_flashlight_13.png" type="Texture" id=11]
+[ext_resource path="res://Resources/Survivor/flashlight/idle/survivor-idle_flashlight_15.png" type="Texture" id=12]
+[ext_resource path="res://Resources/Survivor/flashlight/idle/survivor-idle_flashlight_9.png" type="Texture" id=13]
+[ext_resource path="res://Resources/Survivor/flashlight/idle/survivor-idle_flashlight_16.png" type="Texture" id=14]
+[ext_resource path="res://Resources/Survivor/flashlight/idle/survivor-idle_flashlight_11.png" type="Texture" id=15]
+[ext_resource path="res://Resources/Survivor/flashlight/idle/survivor-idle_flashlight_7.png" type="Texture" id=16]
+[ext_resource path="res://Resources/Survivor/flashlight/idle/survivor-idle_flashlight_17.png" type="Texture" id=17]
+[ext_resource path="res://Resources/Survivor/flashlight/idle/survivor-idle_flashlight_19.png" type="Texture" id=18]
+[ext_resource path="res://Resources/Survivor/flashlight/idle/survivor-idle_flashlight_14.png" type="Texture" id=19]
+[ext_resource path="res://Resources/Survivor/flashlight/idle/survivor-idle_flashlight_5.png" type="Texture" id=20]
+[ext_resource path="res://Resources/Survivor/flashlight/idle/survivor-idle_flashlight_10.png" type="Texture" id=21]
+[ext_resource path="res://Resources/Survivor/flashlight/idle/survivor-idle_flashlight_1.png" type="Texture" id=22]
+[ext_resource path="res://Resources/Survivor/flashlight/idle/survivor-idle_flashlight_2.png" type="Texture" id=23]
+[ext_resource path="res://Resources/Survivor/flashlight/idle/survivor-idle_flashlight_3.png" type="Texture" id=24]
+[ext_resource path="res://Resources/Survivor/flashlight/idle/survivor-idle_flashlight_4.png" type="Texture" id=25]
+[ext_resource path="res://Resources/Survivor/flashlight/meleeattack/survivor-meleeattack_flashlight_4.png" type="Texture" id=26]
+[ext_resource path="res://Resources/Survivor/flashlight/meleeattack/survivor-meleeattack_flashlight_11.png" type="Texture" id=27]
+[ext_resource path="res://Resources/Survivor/flashlight/meleeattack/survivor-meleeattack_flashlight_8.png" type="Texture" id=28]
+[ext_resource path="res://Resources/Survivor/flashlight/meleeattack/survivor-meleeattack_flashlight_13.png" type="Texture" id=29]
+[ext_resource path="res://Resources/Survivor/flashlight/meleeattack/survivor-meleeattack_flashlight_3.png" type="Texture" id=30]
+[ext_resource path="res://Resources/Survivor/flashlight/meleeattack/survivor-meleeattack_flashlight_2.png" type="Texture" id=31]
+[ext_resource path="res://Resources/Survivor/flashlight/meleeattack/survivor-meleeattack_flashlight_1.png" type="Texture" id=32]
+[ext_resource path="res://Resources/Survivor/flashlight/meleeattack/survivor-meleeattack_flashlight_6.png" type="Texture" id=33]
+[ext_resource path="res://Resources/Survivor/flashlight/meleeattack/survivor-meleeattack_flashlight_0.png" type="Texture" id=34]
+[ext_resource path="res://Resources/Survivor/flashlight/move/survivor-move_flashlight_0.png" type="Texture" id=35]
+[ext_resource path="res://Resources/Survivor/flashlight/meleeattack/survivor-meleeattack_flashlight_7.png" type="Texture" id=36]
+[ext_resource path="res://Resources/Survivor/flashlight/meleeattack/survivor-meleeattack_flashlight_10.png" type="Texture" id=37]
+[ext_resource path="res://Resources/Survivor/flashlight/meleeattack/survivor-meleeattack_flashlight_14.png" type="Texture" id=38]
+[ext_resource path="res://Resources/Survivor/flashlight/move/survivor-move_flashlight_1.png" type="Texture" id=39]
+[ext_resource path="res://Resources/Survivor/flashlight/move/survivor-move_flashlight_2.png" type="Texture" id=40]
+[ext_resource path="res://Resources/Survivor/flashlight/move/survivor-move_flashlight_3.png" type="Texture" id=41]
+[ext_resource path="res://Resources/Survivor/flashlight/move/survivor-move_flashlight_4.png" type="Texture" id=42]
+[ext_resource path="res://Resources/Survivor/flashlight/meleeattack/survivor-meleeattack_flashlight_5.png" type="Texture" id=43]
+[ext_resource path="res://Resources/Survivor/flashlight/meleeattack/survivor-meleeattack_flashlight_9.png" type="Texture" id=44]
+[ext_resource path="res://Resources/Survivor/flashlight/meleeattack/survivor-meleeattack_flashlight_12.png" type="Texture" id=45]
+[ext_resource path="res://Resources/Survivor/flashlight/move/survivor-move_flashlight_13.png" type="Texture" id=46]
+[ext_resource path="res://Resources/Survivor/flashlight/move/survivor-move_flashlight_15.png" type="Texture" id=47]
+[ext_resource path="res://Resources/Survivor/flashlight/move/survivor-move_flashlight_18.png" type="Texture" id=48]
+[ext_resource path="res://Resources/Survivor/flashlight/move/survivor-move_flashlight_19.png" type="Texture" id=49]
+[ext_resource path="res://Resources/Survivor/flashlight/move/survivor-move_flashlight_9.png" type="Texture" id=50]
+[ext_resource path="res://Resources/Survivor/flashlight/move/survivor-move_flashlight_5.png" type="Texture" id=51]
+[ext_resource path="res://Resources/Survivor/flashlight/move/survivor-move_flashlight_6.png" type="Texture" id=52]
+[ext_resource path="res://Resources/Survivor/flashlight/move/survivor-move_flashlight_17.png" type="Texture" id=53]
+[ext_resource path="res://Resources/Survivor/flashlight/move/survivor-move_flashlight_11.png" type="Texture" id=54]
+[ext_resource path="res://Resources/Survivor/flashlight/move/survivor-move_flashlight_8.png" type="Texture" id=55]
+[ext_resource path="res://Resources/Survivor/flashlight/move/survivor-move_flashlight_12.png" type="Texture" id=56]
+[ext_resource path="res://Resources/Survivor/flashlight/move/survivor-move_flashlight_14.png" type="Texture" id=57]
+[ext_resource path="res://Resources/Survivor/flashlight/move/survivor-move_flashlight_7.png" type="Texture" id=58]
+[ext_resource path="res://Resources/Survivor/flashlight/move/survivor-move_flashlight_10.png" type="Texture" id=59]
+[ext_resource path="res://Resources/Survivor/flashlight/move/survivor-move_flashlight_16.png" type="Texture" id=60]
+[ext_resource path="res://Resources/Survivor/rifle/idle/survivor-idle_rifle_6.png" type="Texture" id=61]
+[ext_resource path="res://Resources/Survivor/rifle/idle/survivor-idle_rifle_9.png" type="Texture" id=62]
+[ext_resource path="res://Resources/Survivor/rifle/idle/survivor-idle_rifle_7.png" type="Texture" id=63]
+[ext_resource path="res://Resources/Survivor/rifle/idle/survivor-idle_rifle_5.png" type="Texture" id=64]
+[ext_resource path="res://Resources/Survivor/rifle/idle/survivor-idle_rifle_8.png" type="Texture" id=65]
+[ext_resource path="res://Resources/Survivor/rifle/idle/survivor-idle_rifle_10.png" type="Texture" id=66]
+[ext_resource path="res://Resources/Survivor/rifle/idle/survivor-idle_rifle_11.png" type="Texture" id=67]
+[ext_resource path="res://Resources/Survivor/rifle/idle/survivor-idle_rifle_12.png" type="Texture" id=68]
+[ext_resource path="res://Resources/Survivor/rifle/idle/survivor-idle_rifle_13.png" type="Texture" id=69]
+[ext_resource path="res://Resources/Survivor/rifle/idle/survivor-idle_rifle_14.png" type="Texture" id=70]
+[ext_resource path="res://Resources/Survivor/rifle/idle/survivor-idle_rifle_15.png" type="Texture" id=71]
+[ext_resource path="res://Resources/Survivor/rifle/idle/survivor-idle_rifle_0.png" type="Texture" id=72]
+[ext_resource path="res://Resources/Survivor/rifle/idle/survivor-idle_rifle_2.png" type="Texture" id=73]
+[ext_resource path="res://Resources/Survivor/rifle/idle/survivor-idle_rifle_3.png" type="Texture" id=74]
+[ext_resource path="res://Resources/Survivor/rifle/idle/survivor-idle_rifle_4.png" type="Texture" id=75]
+[ext_resource path="res://Resources/Survivor/rifle/idle/survivor-idle_rifle_1.png" type="Texture" id=76]
+[ext_resource path="res://Resources/Survivor/rifle/idle/survivor-idle_rifle_17.png" type="Texture" id=77]
+[ext_resource path="res://Resources/Survivor/rifle/idle/survivor-idle_rifle_16.png" type="Texture" id=78]
+[ext_resource path="res://Resources/Survivor/rifle/idle/survivor-idle_rifle_19.png" type="Texture" id=79]
+[ext_resource path="res://Resources/Survivor/rifle/idle/survivor-idle_rifle_18.png" type="Texture" id=80]
+[ext_resource path="res://Resources/Survivor/rifle/move/survivor-move_rifle_12.png" type="Texture" id=81]
+[ext_resource path="res://Resources/Survivor/rifle/move/survivor-move_rifle_10.png" type="Texture" id=82]
+[ext_resource path="res://Resources/Survivor/rifle/move/survivor-move_rifle_13.png" type="Texture" id=83]
+[ext_resource path="res://Resources/Survivor/rifle/move/survivor-move_rifle_5.png" type="Texture" id=84]
+[ext_resource path="res://Resources/Survivor/rifle/move/survivor-move_rifle_9.png" type="Texture" id=85]
+[ext_resource path="res://Resources/Survivor/rifle/move/survivor-move_rifle_17.png" type="Texture" id=86]
+[ext_resource path="res://Resources/Survivor/rifle/move/survivor-move_rifle_1.png" type="Texture" id=87]
+[ext_resource path="res://Resources/Survivor/rifle/move/survivor-move_rifle_14.png" type="Texture" id=88]
+[ext_resource path="res://Resources/Survivor/rifle/move/survivor-move_rifle_19.png" type="Texture" id=89]
+[ext_resource path="res://Resources/Survivor/rifle/move/survivor-move_rifle_6.png" type="Texture" id=90]
+[ext_resource path="res://Resources/Survivor/rifle/move/survivor-move_rifle_3.png" type="Texture" id=91]
+[ext_resource path="res://Resources/Survivor/rifle/move/survivor-move_rifle_0.png" type="Texture" id=92]
+[ext_resource path="res://Resources/Survivor/rifle/move/survivor-move_rifle_7.png" type="Texture" id=93]
+[ext_resource path="res://Resources/Survivor/rifle/move/survivor-move_rifle_8.png" type="Texture" id=94]
+[ext_resource path="res://Resources/Survivor/rifle/move/survivor-move_rifle_15.png" type="Texture" id=95]
+[ext_resource path="res://Resources/Survivor/rifle/move/survivor-move_rifle_16.png" type="Texture" id=96]
+[ext_resource path="res://Resources/Survivor/rifle/move/survivor-move_rifle_11.png" type="Texture" id=97]
+[ext_resource path="res://Resources/Survivor/rifle/move/survivor-move_rifle_18.png" type="Texture" id=98]
+[ext_resource path="res://Resources/Survivor/rifle/move/survivor-move_rifle_2.png" type="Texture" id=99]
+[ext_resource path="res://Resources/Survivor/rifle/move/survivor-move_rifle_4.png" type="Texture" id=100]
+[ext_resource path="res://Resources/Survivor/handgun/move/survivor-move_handgun_7.png" type="Texture" id=101]
+[ext_resource path="res://Resources/Survivor/handgun/move/survivor-move_handgun_4.png" type="Texture" id=102]
+[ext_resource path="res://Resources/Survivor/handgun/move/survivor-move_handgun_0.png" type="Texture" id=103]
+[ext_resource path="res://Resources/Survivor/handgun/move/survivor-move_handgun_9.png" type="Texture" id=104]
+[ext_resource path="res://Resources/Survivor/handgun/idle/survivor-idle_handgun_13.png" type="Texture" id=105]
+[ext_resource path="res://Resources/Survivor/handgun/move/survivor-move_handgun_12.png" type="Texture" id=106]
+[ext_resource path="res://Resources/Survivor/handgun/move/survivor-move_handgun_18.png" type="Texture" id=107]
+[ext_resource path="res://Resources/Survivor/handgun/move/survivor-move_handgun_5.png" type="Texture" id=108]
+[ext_resource path="res://Resources/Survivor/handgun/move/survivor-move_handgun_13.png" type="Texture" id=109]
+[ext_resource path="res://Resources/Survivor/handgun/move/survivor-move_handgun_1.png" type="Texture" id=110]
+[ext_resource path="res://Resources/Survivor/handgun/move/survivor-move_handgun_10.png" type="Texture" id=111]
+[ext_resource path="res://Resources/Survivor/handgun/idle/survivor-idle_handgun_11.png" type="Texture" id=112]
+[ext_resource path="res://Resources/Survivor/handgun/idle/survivor-idle_handgun_17.png" type="Texture" id=113]
+[ext_resource path="res://Resources/Survivor/handgun/idle/survivor-idle_handgun_19.png" type="Texture" id=114]
+[ext_resource path="res://Resources/Survivor/handgun/meleeattack/survivor-meleeattack_handgun_0.png" type="Texture" id=115]
+[ext_resource path="res://Resources/Survivor/handgun/idle/survivor-idle_handgun_15.png" type="Texture" id=116]
+[ext_resource path="res://Resources/Survivor/handgun/idle/survivor-idle_handgun_16.png" type="Texture" id=117]
+[ext_resource path="res://Resources/Survivor/handgun/idle/survivor-idle_handgun_18.png" type="Texture" id=118]
+[ext_resource path="res://Resources/Survivor/handgun/move/survivor-move_handgun_8.png" type="Texture" id=119]
+[ext_resource path="res://Resources/Survivor/handgun/move/survivor-move_handgun_14.png" type="Texture" id=120]
+[ext_resource path="res://Resources/Survivor/handgun/move/survivor-move_handgun_2.png" type="Texture" id=121]
+[ext_resource path="res://Resources/Survivor/handgun/move/survivor-move_handgun_16.png" type="Texture" id=122]
+[ext_resource path="res://Resources/Survivor/handgun/move/survivor-move_handgun_15.png" type="Texture" id=123]
+[ext_resource path="res://Resources/Survivor/handgun/move/survivor-move_handgun_11.png" type="Texture" id=124]
+[ext_resource path="res://Resources/Survivor/handgun/idle/survivor-idle_handgun_14.png" type="Texture" id=125]
+[ext_resource path="res://Resources/Survivor/handgun/move/survivor-move_handgun_19.png" type="Texture" id=126]
+[ext_resource path="res://Resources/Survivor/handgun/move/survivor-move_handgun_3.png" type="Texture" id=127]
+[ext_resource path="res://Resources/Survivor/handgun/move/survivor-move_handgun_17.png" type="Texture" id=128]
+[ext_resource path="res://Resources/Survivor/handgun/idle/survivor-idle_handgun_12.png" type="Texture" id=129]
+[ext_resource path="res://Resources/Survivor/handgun/move/survivor-move_handgun_6.png" type="Texture" id=130]
+[ext_resource path="res://Resources/Survivor/rifle/meleeattack/survivor-meleeattack_rifle_7.png" type="Texture" id=131]
+[ext_resource path="res://Resources/Survivor/rifle/meleeattack/survivor-meleeattack_rifle_8.png" type="Texture" id=132]
+[ext_resource path="res://Resources/Survivor/rifle/meleeattack/survivor-meleeattack_rifle_4.png" type="Texture" id=133]
+[ext_resource path="res://Resources/Survivor/rifle/meleeattack/survivor-meleeattack_rifle_6.png" type="Texture" id=134]
+[ext_resource path="res://Resources/Survivor/handgun/meleeattack/survivor-meleeattack_handgun_13.png" type="Texture" id=135]
+[ext_resource path="res://Resources/Survivor/handgun/meleeattack/survivor-meleeattack_handgun_10.png" type="Texture" id=136]
+[ext_resource path="res://Resources/Survivor/handgun/meleeattack/survivor-meleeattack_handgun_12.png" type="Texture" id=137]
+[ext_resource path="res://Resources/Survivor/handgun/meleeattack/survivor-meleeattack_handgun_14.png" type="Texture" id=138]
+[ext_resource path="res://Resources/Survivor/rifle/meleeattack/survivor-meleeattack_rifle_11.png" type="Texture" id=139]
+[ext_resource path="res://Resources/Survivor/handgun/meleeattack/survivor-meleeattack_handgun_5.png" type="Texture" id=140]
+[ext_resource path="res://Resources/Survivor/handgun/meleeattack/survivor-meleeattack_handgun_7.png" type="Texture" id=141]
+[ext_resource path="res://Resources/Survivor/handgun/meleeattack/survivor-meleeattack_handgun_1.png" type="Texture" id=142]
+[ext_resource path="res://Resources/Survivor/handgun/meleeattack/survivor-meleeattack_handgun_3.png" type="Texture" id=143]
+[ext_resource path="res://Resources/Survivor/rifle/meleeattack/survivor-meleeattack_rifle_1.png" type="Texture" id=144]
+[ext_resource path="res://Resources/Survivor/rifle/meleeattack/survivor-meleeattack_rifle_2.png" type="Texture" id=145]
+[ext_resource path="res://Resources/Survivor/handgun/meleeattack/survivor-meleeattack_handgun_8.png" type="Texture" id=146]
+[ext_resource path="res://Resources/Survivor/rifle/meleeattack/survivor-meleeattack_rifle_5.png" type="Texture" id=147]
+[ext_resource path="res://Resources/Survivor/rifle/meleeattack/survivor-meleeattack_rifle_14.png" type="Texture" id=148]
+[ext_resource path="res://Resources/Survivor/handgun/meleeattack/survivor-meleeattack_handgun_2.png" type="Texture" id=149]
+[ext_resource path="res://Resources/Survivor/handgun/meleeattack/survivor-meleeattack_handgun_6.png" type="Texture" id=150]
+[ext_resource path="res://Resources/Survivor/rifle/meleeattack/survivor-meleeattack_rifle_9.png" type="Texture" id=151]
+[ext_resource path="res://Resources/Survivor/rifle/meleeattack/survivor-meleeattack_rifle_10.png" type="Texture" id=152]
+[ext_resource path="res://Resources/Survivor/handgun/meleeattack/survivor-meleeattack_handgun_11.png" type="Texture" id=153]
+[ext_resource path="res://Resources/Survivor/rifle/meleeattack/survivor-meleeattack_rifle_13.png" type="Texture" id=154]
+[ext_resource path="res://Resources/Survivor/rifle/meleeattack/survivor-meleeattack_rifle_3.png" type="Texture" id=155]
+[ext_resource path="res://Resources/Survivor/rifle/meleeattack/survivor-meleeattack_rifle_12.png" type="Texture" id=156]
+[ext_resource path="res://Resources/Survivor/handgun/meleeattack/survivor-meleeattack_handgun_9.png" type="Texture" id=157]
+[ext_resource path="res://Resources/Survivor/rifle/meleeattack/survivor-meleeattack_rifle_0.png" type="Texture" id=158]
+[ext_resource path="res://Resources/Survivor/handgun/meleeattack/survivor-meleeattack_handgun_4.png" type="Texture" id=159]
+[ext_resource path="res://Resources/Survivor/handgun/idle/survivor-idle_handgun_5.png" type="Texture" id=160]
+[ext_resource path="res://Resources/Survivor/handgun/idle/survivor-idle_handgun_7.png" type="Texture" id=161]
+[ext_resource path="res://Resources/Survivor/handgun/idle/survivor-idle_handgun_8.png" type="Texture" id=162]
+[ext_resource path="res://Resources/Survivor/handgun/idle/survivor-idle_handgun_9.png" type="Texture" id=163]
+[ext_resource path="res://Resources/Survivor/handgun/idle/survivor-idle_handgun_6.png" type="Texture" id=164]
+[ext_resource path="res://Resources/Survivor/handgun/idle/survivor-idle_handgun_0.png" type="Texture" id=165]
+[ext_resource path="res://Resources/Survivor/handgun/idle/survivor-idle_handgun_4.png" type="Texture" id=166]
+[ext_resource path="res://Resources/Survivor/handgun/idle/survivor-idle_handgun_2.png" type="Texture" id=167]
+[ext_resource path="res://Resources/Survivor/handgun/idle/survivor-idle_handgun_3.png" type="Texture" id=168]
+[ext_resource path="res://Resources/Survivor/handgun/idle/survivor-idle_handgun_10.png" type="Texture" id=169]
+[ext_resource path="res://Resources/Survivor/handgun/idle/survivor-idle_handgun_1.png" type="Texture" id=170]
+[ext_resource path="res://Resources/Survivor/rifle/shoot/survivor-shoot_rifle_1.png" type="Texture" id=171]
+[ext_resource path="res://Resources/Survivor/rifle/shoot/survivor-shoot_rifle_0.png" type="Texture" id=172]
+[ext_resource path="res://Resources/Survivor/rifle/shoot/survivor-shoot_rifle_2.png" type="Texture" id=173]
+[ext_resource path="res://Resources/Survivor/handgun/shoot/survivor-shoot_handgun_0.png" type="Texture" id=174]
+[ext_resource path="res://Resources/Survivor/handgun/shoot/survivor-shoot_handgun_2.png" type="Texture" id=175]
+[ext_resource path="res://Resources/Survivor/handgun/shoot/survivor-shoot_handgun_1.png" type="Texture" id=176]
+[ext_resource path="res://Resources/Survivor/rifle/reload/survivor-reload_rifle_1.png" type="Texture" id=177]
+[ext_resource path="res://Resources/Survivor/rifle/reload/survivor-reload_rifle_3.png" type="Texture" id=178]
+[ext_resource path="res://Resources/Survivor/rifle/reload/survivor-reload_rifle_4.png" type="Texture" id=179]
+[ext_resource path="res://Resources/Survivor/rifle/reload/survivor-reload_rifle_0.png" type="Texture" id=180]
+[ext_resource path="res://Resources/Survivor/rifle/reload/survivor-reload_rifle_2.png" type="Texture" id=181]
+[ext_resource path="res://Resources/Survivor/rifle/reload/survivor-reload_rifle_6.png" type="Texture" id=182]
+[ext_resource path="res://Resources/Survivor/rifle/reload/survivor-reload_rifle_5.png" type="Texture" id=183]
+[ext_resource path="res://Resources/Survivor/rifle/reload/survivor-reload_rifle_7.png" type="Texture" id=184]
+[ext_resource path="res://Resources/Survivor/rifle/reload/survivor-reload_rifle_8.png" type="Texture" id=185]
+[ext_resource path="res://Resources/Survivor/rifle/reload/survivor-reload_rifle_18.png" type="Texture" id=186]
+[ext_resource path="res://Resources/Survivor/rifle/reload/survivor-reload_rifle_12.png" type="Texture" id=187]
+[ext_resource path="res://Resources/Survivor/rifle/reload/survivor-reload_rifle_16.png" type="Texture" id=188]
+[ext_resource path="res://Resources/Survivor/handgun/reload/survivor-reload_handgun_5.png" type="Texture" id=189]
+[ext_resource path="res://Resources/Survivor/handgun/reload/survivor-reload_handgun_3.png" type="Texture" id=190]
+[ext_resource path="res://Resources/Survivor/handgun/reload/survivor-reload_handgun_11.png" type="Texture" id=191]
+[ext_resource path="res://Resources/Survivor/handgun/reload/survivor-reload_handgun_9.png" type="Texture" id=192]
+[ext_resource path="res://Resources/Survivor/rifle/reload/survivor-reload_rifle_9.png" type="Texture" id=193]
+[ext_resource path="res://Resources/Survivor/handgun/reload/survivor-reload_handgun_12.png" type="Texture" id=194]
+[ext_resource path="res://Resources/Survivor/handgun/reload/survivor-reload_handgun_13.png" type="Texture" id=195]
+[ext_resource path="res://Resources/Survivor/handgun/reload/survivor-reload_handgun_14.png" type="Texture" id=196]
+[ext_resource path="res://Resources/Survivor/rifle/reload/survivor-reload_rifle_13.png" type="Texture" id=197]
+[ext_resource path="res://Resources/Survivor/rifle/reload/survivor-reload_rifle_15.png" type="Texture" id=198]
+[ext_resource path="res://Resources/Survivor/rifle/reload/survivor-reload_rifle_17.png" type="Texture" id=199]
+[ext_resource path="res://Resources/Survivor/handgun/reload/survivor-reload_handgun_6.png" type="Texture" id=200]
+[ext_resource path="res://Resources/Survivor/handgun/reload/survivor-reload_handgun_4.png" type="Texture" id=201]
+[ext_resource path="res://Resources/Survivor/handgun/reload/survivor-reload_handgun_8.png" type="Texture" id=202]
+[ext_resource path="res://Resources/Survivor/handgun/reload/survivor-reload_handgun_1.png" type="Texture" id=203]
+[ext_resource path="res://Resources/Survivor/handgun/reload/survivor-reload_handgun_7.png" type="Texture" id=204]
+[ext_resource path="res://Resources/Survivor/handgun/reload/survivor-reload_handgun_10.png" type="Texture" id=205]
+[ext_resource path="res://Resources/Survivor/handgun/reload/survivor-reload_handgun_0.png" type="Texture" id=206]
+[ext_resource path="res://Resources/Survivor/rifle/reload/survivor-reload_rifle_10.png" type="Texture" id=207]
+[ext_resource path="res://Resources/Survivor/rifle/reload/survivor-reload_rifle_14.png" type="Texture" id=208]
+[ext_resource path="res://Resources/Survivor/rifle/reload/survivor-reload_rifle_11.png" type="Texture" id=209]
+[ext_resource path="res://Resources/Survivor/handgun/reload/survivor-reload_handgun_2.png" type="Texture" id=210]
+[ext_resource path="res://Resources/Survivor/rifle/reload/survivor-reload_rifle_19.png" type="Texture" id=211]
+[ext_resource path="res://Resources/Sound/footstep1.ogg" type="AudioStream" id=212]
+[ext_resource path="res://Resources/Sound/hit_punch.mp3" type="AudioStream" id=213]
+
+[sub_resource type="CircleShape2D" id=9]
+radius = 115.0
+
+[sub_resource type="Animation" id=8]
+resource_name = "autoshot_attack"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "autoshot_attack" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sprite/HitArea/HitCollision:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.3, 0.35 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true ]
+}
+
+[sub_resource type="Animation" id=4]
+resource_name = "flush_attack"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "flush_attack" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sprite/HitArea/HitCollision:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.3, 0.35 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true ]
+}
+
+[sub_resource type="Animation" id=7]
+resource_name = "handshot_attack"
+length = 0.5
+tracks/0/type = "value"
+tracks/0/path = NodePath("Sprite:animation")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ "handshot_attack" ]
+}
+tracks/1/type = "value"
+tracks/1/path = NodePath("Sprite:playing")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/keys = {
+"times": PoolRealArray( 0 ),
+"transitions": PoolRealArray( 1 ),
+"update": 1,
+"values": [ true ]
+}
+tracks/2/type = "value"
+tracks/2/path = NodePath("Sprite/HitArea/HitCollision:disabled")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/keys = {
+"times": PoolRealArray( 0, 0.3, 0.35 ),
+"transitions": PoolRealArray( 1, 1, 1 ),
+"update": 1,
+"values": [ true, false, true ]
+}
+
+[sub_resource type="SpriteFrames" id=3]
+animations = [ {
+"frames": [ ExtResource( 158 ), ExtResource( 144 ), ExtResource( 145 ), ExtResource( 155 ), ExtResource( 133 ), ExtResource( 147 ), ExtResource( 134 ), ExtResource( 131 ), ExtResource( 132 ), ExtResource( 151 ), ExtResource( 152 ), ExtResource( 139 ), ExtResource( 156 ), ExtResource( 154 ), ExtResource( 148 ) ],
+"loop": false,
+"name": "autoshot_attack",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 72 ), ExtResource( 76 ), ExtResource( 73 ), ExtResource( 74 ), ExtResource( 75 ), ExtResource( 64 ), ExtResource( 61 ), ExtResource( 63 ), ExtResource( 65 ), ExtResource( 62 ), ExtResource( 66 ), ExtResource( 67 ), ExtResource( 68 ), ExtResource( 69 ), ExtResource( 70 ), ExtResource( 71 ), ExtResource( 78 ), ExtResource( 77 ), ExtResource( 80 ), ExtResource( 79 ) ],
+"loop": true,
+"name": "autoshot_idle",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 92 ), ExtResource( 87 ), ExtResource( 99 ), ExtResource( 91 ), ExtResource( 100 ), ExtResource( 84 ), ExtResource( 90 ), ExtResource( 93 ), ExtResource( 94 ), ExtResource( 85 ), ExtResource( 82 ), ExtResource( 97 ), ExtResource( 81 ), ExtResource( 83 ), ExtResource( 88 ), ExtResource( 95 ), ExtResource( 96 ), ExtResource( 86 ), ExtResource( 98 ), ExtResource( 89 ) ],
+"loop": true,
+"name": "autoshot_move",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 180 ), ExtResource( 177 ), ExtResource( 181 ), ExtResource( 178 ), ExtResource( 179 ), ExtResource( 183 ), ExtResource( 182 ), ExtResource( 184 ), ExtResource( 185 ), ExtResource( 193 ), ExtResource( 207 ), ExtResource( 209 ), ExtResource( 187 ), ExtResource( 197 ), ExtResource( 208 ), ExtResource( 198 ), ExtResource( 188 ), ExtResource( 199 ), ExtResource( 186 ), ExtResource( 211 ) ],
+"loop": false,
+"name": "autoshot_reload",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 172 ), ExtResource( 171 ), ExtResource( 173 ) ],
+"loop": false,
+"name": "autoshot_shoot",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 34 ), ExtResource( 32 ), ExtResource( 31 ), ExtResource( 30 ), ExtResource( 26 ), ExtResource( 43 ), ExtResource( 33 ), ExtResource( 36 ), ExtResource( 28 ), ExtResource( 44 ), ExtResource( 37 ), ExtResource( 27 ), ExtResource( 45 ), ExtResource( 29 ), ExtResource( 38 ) ],
+"loop": false,
+"name": "flush_attack",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 1 ), ExtResource( 22 ), ExtResource( 23 ), ExtResource( 24 ), ExtResource( 25 ), ExtResource( 20 ), ExtResource( 9 ), ExtResource( 16 ), ExtResource( 10 ), ExtResource( 13 ), ExtResource( 21 ), ExtResource( 15 ), ExtResource( 7 ), ExtResource( 11 ), ExtResource( 19 ), ExtResource( 12 ), ExtResource( 14 ), ExtResource( 17 ), ExtResource( 8 ), ExtResource( 18 ) ],
+"loop": true,
+"name": "flush_idle",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 35 ), ExtResource( 39 ), ExtResource( 40 ), ExtResource( 41 ), ExtResource( 42 ), ExtResource( 51 ), ExtResource( 52 ), ExtResource( 58 ), ExtResource( 55 ), ExtResource( 50 ), ExtResource( 59 ), ExtResource( 54 ), ExtResource( 56 ), ExtResource( 46 ), ExtResource( 57 ), ExtResource( 47 ), ExtResource( 60 ), ExtResource( 53 ), ExtResource( 48 ), ExtResource( 49 ) ],
+"loop": true,
+"name": "flush_move",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 115 ), ExtResource( 142 ), ExtResource( 149 ), ExtResource( 143 ), ExtResource( 159 ), ExtResource( 140 ), ExtResource( 150 ), ExtResource( 141 ), ExtResource( 146 ), ExtResource( 157 ), ExtResource( 136 ), ExtResource( 153 ), ExtResource( 137 ), ExtResource( 135 ), ExtResource( 138 ) ],
+"loop": false,
+"name": "handshot_attack",
+"speed": 30.0
+}, {
+"frames": [ ExtResource( 165 ), ExtResource( 170 ), ExtResource( 167 ), ExtResource( 168 ), ExtResource( 166 ), ExtResource( 160 ), ExtResource( 164 ), ExtResource( 161 ), ExtResource( 162 ), ExtResource( 163 ), ExtResource( 169 ), ExtResource( 112 ), ExtResource( 129 ), ExtResource( 105 ), ExtResource( 125 ), ExtResource( 116 ), ExtResource( 117 ), ExtResource( 113 ), ExtResource( 118 ), ExtResource( 114 ) ],
+"loop": true,
+"name": "handshot_idle",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 103 ), ExtResource( 110 ), ExtResource( 121 ), ExtResource( 127 ), ExtResource( 102 ), ExtResource( 108 ), ExtResource( 130 ), ExtResource( 101 ), ExtResource( 119 ), ExtResource( 104 ), ExtResource( 111 ), ExtResource( 124 ), ExtResource( 106 ), ExtResource( 109 ), ExtResource( 120 ), ExtResource( 123 ), ExtResource( 122 ), ExtResource( 128 ), ExtResource( 107 ), ExtResource( 126 ) ],
+"loop": true,
+"name": "handshot_move",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 206 ), ExtResource( 203 ), ExtResource( 210 ), ExtResource( 190 ), ExtResource( 201 ), ExtResource( 189 ), ExtResource( 200 ), ExtResource( 204 ), ExtResource( 202 ), ExtResource( 192 ), ExtResource( 205 ), ExtResource( 191 ), ExtResource( 194 ), ExtResource( 195 ), ExtResource( 196 ) ],
+"loop": false,
+"name": "handshot_reload",
+"speed": 20.0
+}, {
+"frames": [ ExtResource( 174 ), ExtResource( 176 ), ExtResource( 175 ) ],
+"loop": false,
+"name": "handshot_shoot",
+"speed": 30.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=5]
+extents = Vector2( 79.2081, 124.005 )
+
+[sub_resource type="CircleShape2D" id=6]
+radius = 93.0
+
+[node name="Survivor" type="KinematicBody2D"]
+rotation = -0.00413308
+z_index = 1000
+collision_mask = 2
+script = ExtResource( 2 )
+
+[node name="BodyCollision" type="CollisionShape2D" parent="."]
+position = Vector2( -0.999991, -0.00413307 )
+rotation = 0.0174533
+shape = SubResource( 9 )
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+anims/autoshot_attack = SubResource( 8 )
+anims/flush_attack = SubResource( 4 )
+anims/handshot_attack = SubResource( 7 )
+
+[node name="Shadow" type="Sprite" parent="."]
+self_modulate = Color( 1, 1, 1, 0.470588 )
+position = Vector2( -4.76837e-07, 3.57628e-06 )
+scale = Vector2( 1.92908, 4.65625 )
+texture = ExtResource( 3 )
+
+[node name="Sprite" type="AnimatedSprite" parent="."]
+frames = SubResource( 3 )
+animation = "flush_idle"
+frame = 6
+playing = true
+
+[node name="FlushLight" type="Light2D" parent="Sprite"]
+position = Vector2( 125, -30 )
+rotation = -1.57079
+scale = Vector2( 0.479383, 0.795248 )
+texture = ExtResource( 4 )
+offset = Vector2( -2.09808e-05, 730 )
+energy = 1.3
+shadow_enabled = true
+shadow_gradient_length = 0.3
+
+[node name="CenteLightr" type="Light2D" parent="Sprite"]
+scale = Vector2( 3.49089, 3.49089 )
+texture = ExtResource( 5 )
+energy = 1.2
+shadow_enabled = true
+shadow_gradient_length = 0.3
+
+[node name="Weapon" parent="Sprite" instance=ExtResource( 6 )]
+position = Vector2( 63, 50 )
+m_weapon = 2
+
+[node name="HitArea" type="Area2D" parent="Sprite"]
+position = Vector2( -39, 0 )
+collision_layer = 32
+collision_mask = 4
+
+[node name="HitCollision" type="CollisionShape2D" parent="Sprite/HitArea"]
+position = Vector2( 84.2081, 17.5103 )
+shape = SubResource( 5 )
+disabled = true
+
+[node name="HurtArea" type="Area2D" parent="."]
+collision_layer = 16
+collision_mask = 8
+
+[node name="HurtCollision" type="CollisionShape2D" parent="HurtArea"]
+position = Vector2( -36.008, 1.85119 )
+rotation = 0.0174533
+shape = SubResource( 6 )
+
+[node name="footstep" type="AudioStreamPlayer2D" parent="."]
+pause_mode = 2
+stream = ExtResource( 212 )
+volume_db = -5.0
+
+[node name="Timer" type="Timer" parent="footstep"]
+one_shot = true
+
+[node name="HeathEffect" type="Timer" parent="."]
+wait_time = 10.0
+autostart = true
+
+[node name="HurtAudio" type="AudioStreamPlayer2D" parent="."]
+pause_mode = 2
+
+[node name="PunchAudio" type="AudioStreamPlayer2D" parent="."]
+stream = ExtResource( 213 )
+
+[connection signal="animation_finished" from="Sprite" to="." method="_on_Sprite_animation_finished"]
+[connection signal="area_entered" from="Sprite/HitArea" to="." method="_on_HitArea_area_entered"]
+[connection signal="timeout" from="HeathEffect" to="." method="_on_HeathEffect_timeout"]

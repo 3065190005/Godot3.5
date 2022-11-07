@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/hand_shot_shooting.mp3-dd78ff609483e7a71180dc981d45e8c3.mp3str"
+
+[deps]
+
+source_file="res://Resources/Sound/hand_shot_shooting.mp3"
+dest_files=[ "res://.import/hand_shot_shooting.mp3-dd78ff609483e7a71180dc981d45e8c3.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0

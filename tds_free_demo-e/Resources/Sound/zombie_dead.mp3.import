@@ -1,0 +1,15 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+path="res://.import/zombie_dead.mp3-e11b8a1f48d09fc36362c5b2a6d50d59.mp3str"
+
+[deps]
+
+source_file="res://Resources/Sound/zombie_dead.mp3"
+dest_files=[ "res://.import/zombie_dead.mp3-e11b8a1f48d09fc36362c5b2a6d50d59.mp3str" ]
+
+[params]
+
+loop=false
+loop_offset=0
