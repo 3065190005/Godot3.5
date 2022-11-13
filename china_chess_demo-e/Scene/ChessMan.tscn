@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=2]
+
+[ext_resource path="res://Script/ChessMan.gd" type="Script" id=1]
+
+[node name="ChessMan" type="Sprite"]
+scale = Vector2( 2, 2 )
+script = ExtResource( 1 )
